@@ -1,6 +1,6 @@
 Fire up an elevated pwsh and run this:
 
-```PowerShell
+```pwsh
 iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/ronnelsantiago/New-Machine.ps1/master/New-Machine.ps1'))
 ```
 
@@ -16,3 +16,5 @@ This script will:
 - Enabling windows features
 - Installs WSL distros(ubuntu and kali)
 - Installs Azure CLI
+
+> On a descent machine and internet connection this usually takes around 25-30 minutes.
