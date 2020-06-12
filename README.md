@@ -1,5 +1,18 @@
-Got that new machine smell? Run this:
+Fire up an elevated pwsh and run this:
 
-    if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { throw "You need to run this from an elevated PS prompt" }; Set-ExecutionPolicy RemoteSigned -Force; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/tathamoddie/New-Machine.ps1/master/New-Machine.ps1'))
+```PowerShell
+iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/ronnelsantiago/New-Machine.ps1/master/New-Machine.ps1'))
+```
 
-You trust me, right?
+This script will:
+
+- Installs apps using chocolatey
+- Installs powershell modules
+- Setup git alias
+- Creates `c:\repos` and `c:\temp` folders
+- Disable sleep on AC power
+- Removes pre loaded windows 10 apps that I don't need
+- Setting my prefered windows explorer options, eg. shows hidden files, show file extensions, etc
+- Enabling windows features
+- Installs WSL distros(ubuntu and kali)
+- Installs Azure CLI
