@@ -69,6 +69,9 @@ Write-Host "Installing Powershell modules" -ForegroundColor Magenta
 $ModulesToInstall = @(
     "Posh-Docker"
     "Posh-Git"
+    "oh-my-posh"
+    "PSReadLine"
+    "PSScriptAnalyzer"
 )
 foreach ($Module in $ModulesToInstall) {
     if ($null -eq (Get-Module -Name $Module -ListAvailable)) {
