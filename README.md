@@ -1,4 +1,4 @@
-Fire up an elevated pwsh and run this:
+Fire up an elevated powershell and run this:
 
 ```pwsh
 iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/ronnelsantiago/New-Machine.ps1/master/New-Machine.ps1'))
