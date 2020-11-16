@@ -86,7 +86,6 @@ foreach ($Module in $ModulesToInstall) {
             if ($null -eq (Get-Package -Name $Module -ErrorAction SilentlyContinue)) {
                 Write-Host ("Force Installing PowerShell Module - {0}" -f $Module) -ForegroundColor Magenta
                 $null = Install-Module -Name $Module -Force
-                
             }
             else {
                 Write-Host ("Updating PowerShell Module - {0}" -f $Module) -ForegroundColor Magenta
@@ -111,6 +110,10 @@ git config --global credential.useHttpPath true
 
 Write-Host "Setting VS Code as the Git editor" -ForegroundColor Magenta
 git config --global core.editor "code --wait"
+
+Write-Host "Setting autostash with git pull --rebase" -ForegroundColor Magenta
+git config --global pull.rebase true
+git config --global rebase.autoStash true
 
 $repos = "c:\repos"
 Write-Host "Creating $repos folder" -ForegroundColor Magenta
