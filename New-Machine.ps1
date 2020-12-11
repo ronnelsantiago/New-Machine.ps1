@@ -111,6 +111,7 @@ git config --global credential.useHttpPath true
 Write-Host "Setting VS Code as the Git editor" -ForegroundColor Magenta
 git config --global core.editor "code --wait"
 
+# https://cscheng.info/2017/01/26/git-tip-autostash-with-git-pull-rebase.html
 Write-Host "Setting autostash with git pull --rebase" -ForegroundColor Magenta
 git config --global pull.rebase true
 git config --global rebase.autoStash true
