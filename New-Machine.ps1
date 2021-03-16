@@ -1,4 +1,4 @@
-﻿[CmdletBinding()]
+[CmdletBinding()]
 param ()
 
 $timer = [System.Diagnostics.Stopwatch]::StartNew()
@@ -39,7 +39,7 @@ $chocoPackages = @(
     "fiddler"
     "git"
     "github-desktop"
-    "linqpad"
+    "linqpad6"
     "microsoft-windows-terminal"
     "microsoftazurestorageexplorer"
     "nvm.portable"
