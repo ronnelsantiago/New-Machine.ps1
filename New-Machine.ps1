@@ -27,7 +27,6 @@ $chocoPackages = @(
     "firefox"
     "googlechrome"
     "microsoft-edge-insider-dev"
-    "nodejs-lts"
     "7zip"
     "bleachbit"
     "notepadplusplus"
