@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param ()
 
 $timer = [System.Diagnostics.Stopwatch]::StartNew()
@@ -206,7 +206,7 @@ $ProgressPreference = 'SilentlyContinue'
 # https://docs.microsoft.com/en-us/windows/wsl/install-manual
 Write-Host "Downloading ubuntu distro."
 $ubuntu = ".\Ubuntu.appx"
-Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1804 -OutFile $ubuntu -UseBasicParsing; Write-Host "Installing ubuntu distro."; Add-AppxPackage $ubuntu; Remove-Item $ubuntu; Write-Host "Finished installing ubuntu distro."
+Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile $ubuntu -UseBasicParsing; Write-Host "Installing ubuntu distro."; Add-AppxPackage $ubuntu; Remove-Item $ubuntu; Write-Host "Finished installing ubuntu distro."
 
 Write-Host "Downloading kali distro."
 $kali = ".\Kali.appx"
