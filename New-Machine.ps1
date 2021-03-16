@@ -47,7 +47,6 @@ $chocoPackages = @(
     "powershell-core"
     "smtp4dev"
     "sysinternals"
-    "visualstudiocode"
     "signal"
     "yarn"
     "rescuetime"
