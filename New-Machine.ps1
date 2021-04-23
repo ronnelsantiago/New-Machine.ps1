@@ -1,4 +1,4 @@
-﻿[CmdletBinding()]
+[CmdletBinding()]
 param ()
 
 $timer = [System.Diagnostics.Stopwatch]::StartNew()
@@ -29,6 +29,7 @@ $chocoPackages = @(
     "microsoft-edge-insider-dev"
     "7zip"
     "bleachbit"
+    "vscode"
     "notepadplusplus"
     "paint.net"
     "screentogif"
