@@ -106,6 +106,7 @@ git config --global alias.st "status"
 
 Write-Host "Setting git credential manager" -ForegroundColor Magenta
 git config --global credential.useHttpPath true
+git config --global credential.helper wincred #https://code.visualstudio.com/docs/remote/troubleshooting#_sharing-git-credentials-between-windows-and-wsl
 
 Write-Host "Setting VS Code as the Git editor" -ForegroundColor Magenta
 git config --global core.editor "code --wait"
